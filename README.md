@@ -3,7 +3,7 @@
 **A long-horizon physical agent.** Tell it what to cook. It plans the mission, kits the ingredients with a robot arm — and when something physically goes wrong mid-run, it notices, diagnoses, and recovers.
 
 Built for the **AGI House Hackathon — Long-Horizon Agents**.
-**[Live demo page →](https://bouncypitch.github.io/mise/)**
+**[Live demo page →](https://bouncypitch.github.io/mise-cooking-robot-agent/)**
 
 <img src="checkpoints/generated_images/curry_hero.jpeg" alt="Target dish: low-carb Thai green curry" width="100%">
 
@@ -29,7 +29,7 @@ This is **not** "an LLM controls a robot." The LLM never touches trajectories, j
 | [![Clean run](checkpoints/generated_images/clean_run.gif)](media/mise_demo_clean.mp4) | [![Stress test](checkpoints/generated_images/stress_test.gif)](media/mise_demo_failures.mp4) |
 | 5/5 kitted · 0 failures · hazard rate 0.0 | 5/5 kitted despite 5 injected failures · hazard rate 0.333 |
 
-GIF previews above (click either to download the full-quality `.mp4`) — or watch both with audio-free native playback on the **[live demo page](https://bouncypitch.github.io/mise/)**.
+GIF previews above (click either to download the full-quality `.mp4`) — or watch both with audio-free native playback on the **[live demo page](https://bouncypitch.github.io/mise-cooking-robot-agent/)**.
 
 ## How it thinks
 
@@ -92,7 +92,7 @@ A voice request is decomposed into an ingredient list, a robot retrieves each ra
 ## Quickstart
 
 ```bash
-git clone https://github.com/bouncypitch/mise.git
+git clone https://github.com/bouncypitch/mise-cooking-robot-agent.git
 cd mise
 python -m venv .venv && source .venv/bin/activate   # or use conda
 pip install -r requirements.txt
